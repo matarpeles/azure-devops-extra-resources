@@ -1,0 +1,75 @@
+{
+  "identifier": "azure_devops_pipeline_run",
+  "description": "This blueprint represents an Azure DevOps pipeline run",
+  "title": "Pipeline Run",
+  "icon": "AzureDevops",
+  "schema": {
+    "properties": {
+      "status": {
+        "icon": "DefaultProperty",
+        "title": "Current Status",
+        "description": "The status of the pipeline run (e.g., completed, in progress)",
+        "type": "string",
+        "enum": [
+          "completed",
+          "in_progress",
+          "queued",
+          "canceled"
+        ],
+        "enumColors": {
+          "completed": "green",
+          "in_progress": "yellow",
+          "queued": "lightGray",
+          "canceled": "red"
+        }
+      },
+      "result": {
+        "icon": "DefaultProperty",
+        "title": "Result",
+        "description": "The result of the pipeline run (e.g., succeeded, failed, canceled)",
+        "type": "string",
+        "enum": [
+          "succeeded",
+          "failed",
+          "canceled",
+          "N/A"
+        ],
+        "enumColors": {
+          "succeeded": "green",
+          "failed": "red",
+          "canceled": "lightGray",
+          "N/A": "lightGray"
+        }
+      },
+      "url": {
+        "icon": "AzurePipline",
+        "type": "string",
+        "title": "Link",
+        "format": "url",
+        "description": "URL link to the specific pipeline run in Azure DevOps"
+      },
+      "created_at": {
+        "type": "string",
+        "title": "Created at",
+        "format": "date-time"
+      },
+      "finished_at": {
+        "type": "string",
+        "title": "Finished at",
+        "format": "date-time"
+      }
+    },
+    "required": []
+  },
+  "mirrorProperties": {},
+  "calculationProperties": {},
+  "aggregationProperties": {},
+  "relations": {
+    "pipeline": {
+      "title": "Pipeline",
+      "target": "azureDevopsPipeline",
+      "required": false,
+      "many": false
+    }
+  }
+}
