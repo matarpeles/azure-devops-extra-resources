@@ -1,7 +1,27 @@
 
-# README: How to Use the Scripts
+# README: How to Use the Scripts in `AZURE-DEVOPS-EXTRA-RESOURCES`
 
-This guide explains how to set up and run each script. It includes instructions on setting environment variables, creating the required blueprints in Port, and running the scripts.
+This guide explains how to set up and run the scripts in the repository. It includes instructions on setting environment variables, creating the required blueprints in Port, and running the scripts.
+
+---
+
+## Repository Structure
+
+### Folders and Files
+
+- **`ingesting-monorepos/`**
+  - `ado-monorepos.py`: Script for ingesting monorepos from Azure DevOps.
+  - `blueprint.json`: JSON schema for the related Port blueprint.
+
+- **`ingesting-pipeline-runs/`**
+  - `azure_pipeline_runs.py`: Script for ingesting Azure DevOps pipeline runs.
+  - `blueprint.json`: JSON schema for the `azure_devops_pipeline_run` blueprint.
+
+- **`ingesting-repo-files/api-specs/`**
+  - `api-specs.py`: Script for ingesting API specs from repository files.
+  - `blueprint.json`: JSON schema for the `api_spec` blueprint.
+
+- `README.md`: This documentation file.
 
 ---
 
@@ -15,6 +35,7 @@ This guide explains how to set up and run each script. It includes instructions 
 3. **Access**:
    - Azure DevOps account with appropriate permissions.
    - Port account with credentials for API access.
+
 ---
 
 ## 1. Setting Environment Variables
@@ -152,3 +173,4 @@ Replace `<script_name>` with the name of the script you want to run.
 
 ---
 
+This guide ensures you can set up and execute the scripts securely and effectively.
