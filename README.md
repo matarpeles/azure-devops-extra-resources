@@ -1,6 +1,4 @@
 
-# README: How to Use the Scripts
-
 This guide explains how to set up and run each script. It includes instructions on setting environment variables, creating the required blueprints in Port, and running the scripts.
 
 ---
