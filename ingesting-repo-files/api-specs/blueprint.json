@@ -1,0 +1,27 @@
+{
+    "identifier": "api_spec",
+    "title": "API Spec",
+    "icon": "Swagger",
+    "schema": {
+      "properties": {
+        "swagger_ui": {
+          "type": "string",
+          "title": "Swagger UI",
+          "format": "yaml",
+          "spec": "open-api"
+        }
+      },
+      "required": []
+    },
+    "mirrorProperties": {},
+    "calculationProperties": {},
+    "aggregationProperties": {},
+    "relations": {
+      "service": {
+        "title": "Service",
+        "target": "service",
+        "required": false,
+        "many": false
+      }
+    }
+  }
