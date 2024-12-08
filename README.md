@@ -7,9 +7,9 @@ This guide explains how to set up and run each script in the repository. Each se
 
 ## Prerequisites 
 - Install the [Port Azure DevOps integration](https://docs.getport.io/build-your-software-catalog/sync-data-to-catalog/git/azure-devops/installation)
-- Retrieve your Port credentials
+- Retrieve your [Port credentials](https://docs.getport.io/build-your-software-catalog/sync-data-to-catalog/code-quality-security/wiz#port-credentials)
 - Create a [Personal Access token](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows) in Azure DevOps
-- Retrieve your organization url in Azure DevOps ()
+- Retrieve your organization url in Azure DevOps
 
 ## Scripts Overview
 
