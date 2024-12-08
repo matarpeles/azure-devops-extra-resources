@@ -202,5 +202,3 @@ python ingesting-repo-files/api-specs/api-specs.py
 ```
 
 ---
-
-This guide ensures you can set up and execute each script securely and effectively.
